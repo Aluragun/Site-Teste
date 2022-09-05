@@ -1,3 +1,4 @@
+/* Estrutura geral para todas as páginas */
 body {
 	font-family: 'Montserrat', sans-serif;
 }
@@ -37,6 +38,20 @@ nav a:hover {
 	text-decoration: underline;
 }
 
+footer {
+	text-align: center;
+	background: url(bg.jpg);
+	padding: 40px 0px;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+/* Fim da estrutura geral*/
+
+/*Começo da estrutura da homepage*/
 .banner {
 	width:100%;
 }
@@ -127,17 +142,7 @@ nav a:hover {
 	margin: 2em auto;
 }
 
-footer {
-	text-align: center;
-	background: url(bg.jpg);
-	padding: 40px 0px;
-}
 
-.copyright {
-	color: #FFFFFF;
-	font-size: 13px;
-	margin: 20px 0 0;
-}
 
 @media screen and (max-width: 480px) {
 	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
@@ -156,3 +161,113 @@ footer {
 		width: 100%;
 	}
 }
+
+/*Fim da estrutura da homepage*/
+
+/*Começo da estrutura da página de produtos*/
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover {
+	border-color: #C78C19;
+}
+
+.produtos li:active {
+	border-color: #088C19;	
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+/*Fim da estrutura da página de produtos*/
+
+/*Começo da estrutura da página de contato*/
+.main-contato {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    padding: 40px 0;
+}
+
+form label, legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.standard-input {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead{
+    border: 1px solid black;
+    background-color: #BBBBBB;
+    font-weight: bold;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+/*Fim da estrutura da página de contato*/
