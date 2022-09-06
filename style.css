@@ -5,7 +5,7 @@ body {
 
 header {
 	background: #BBBBBB;
-	padding: 20px 0;
+	padding: 1.5em 0;
 }
 
 .caixa {
@@ -168,7 +168,7 @@ footer {
 .produtos {
 	width: 940px;
 	margin: 0 auto;
-	padding: 50px 0;
+	padding: 3em 0;
 }
 
 .produtos li {
@@ -177,10 +177,10 @@ footer {
 	width: 30%;
 	vertical-align: top;
 	margin: 0 1.5%;
-	padding: 30px 20px;
+	padding: 2em 1em;
 	box-sizing: border-box;
-	border: 2px solid #000000;
-	border-radius: 10px;
+	border: 0.2em solid #000000;
+	border-radius: 0.6em;
 }
 
 .produtos li:hover {
@@ -192,22 +192,34 @@ footer {
 }
 
 .produtos li:hover h2 {
-	font-size: 34px;
+	font-size: 2em;
 }
 
 .produtos h2 {
-	font-size: 30px;
+	font-size: 1.8em;
 	font-weight: bold;
 }
 
 .produto-descricao {
-	font-size: 18px;
+	font-size: 1.2em;
 }
 
 .produto-preco {
 	font-size: 22px;
 	font-weight: bold;
 	margin-top: 10px;
+}
+
+@media screen and (max-width: 480px) {
+	.produtos{
+		width:auto;
+		margin: 0;
+	}
+
+	.produtos li {
+		width: 80%;
+		margin: 1em 10%;
+	}
 }
 /*Fim da estrutura da página de produtos*/
 
