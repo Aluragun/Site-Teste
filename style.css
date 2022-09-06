@@ -282,4 +282,11 @@ th, td {
     border: 1px solid black;
     padding: 8px 15px;
 }
+
+@media screen and (max-width: 480px) {
+	.main-contato {
+		width: auto;
+		margin: 1em;
+	}
+}
 /*Fim da estrutura da página de contato*/
